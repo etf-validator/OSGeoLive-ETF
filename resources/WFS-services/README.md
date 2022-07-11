@@ -4,4 +4,7 @@ The Web Feature Service (WFS) represents a change in the way geographic informat
 
 In ETF, we validate if these services follow the basic requirements for WFS services set by INSPIRE
 
-In this folder there are some services that you can validate. If the validation doesn't work, you can try to fix them.
+In this file there are some link to services that you can validate. If the validation doesn't work, you can try to fix them.
+
+Resources links:
+- https://ows.emodnet-bathymetry.eu/wfs?SERVICE=WFS&REQUEST=GetCapabilities&VERSION=2.0.0
