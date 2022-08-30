@@ -6,6 +6,6 @@ In ETF, we validate if the data sets follow the basic requirements for the GML e
 
 In this folder there are some predefined data sets that you can validate. 
 
-If the validation doesn't work, you can try to fix them.
+If the validation doesn't work, you can try to fix it.
 
 
