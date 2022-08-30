@@ -1,285 +1,3127 @@
 <?xml version="1.0" ?>
-<gml:FeatureCollection xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo"
-  xmlns:su-core="http://inspire.ec.europa.eu/schemas/su-core/4.0"
-  xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:hh="http://inspire.ec.europa.eu/schemas/hh/4.0"
-  xmlns:hfp="http://www.w3.org/2001/XMLSchema-hasFacetAndProperty"
-  xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ns1="http://www.w3.org/1999/xhtml"
-  xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gsr="http://www.isotc211.org/2005/gsr"
-  xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  gml:id="_7a4a490a-2e37-473f-a88d-daa9994a7369"
-  xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/hh/4.0 http://inspire.ec.europa.eu/schemas/hh/4.0/HumanHealth.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
-
-  <!--  Biomarker feature type-->
-  <gml:featureMember>
-    <hh:Biomarker gml:id="BM_1">
-      <hh:aggregationUnit xlink:href="linkToSU"/>
-      <!--Association with statistical unit to which health statistical data refers.-->
-      <hh:biomarkerName>
-        <hh:BiomarkerType>
-          <!--<hh:chemical xlink:href="linkToExternalCodelist"/>-->
-          <hh:matrix xlink:href="linkToExternalCodelist"/>
-        </hh:BiomarkerType>
-      </hh:biomarkerName>
-      <hh:biomarkerStatisticalParameter>
-        <hh:BiomarkerStatisticalParameterType>
-          <hh:geometricMean uom="uom">10.0</hh:geometricMean>
-          <hh:CI95ofGM uom="uom">10.0</hh:CI95ofGM>
-          <hh:P50 uom="uom">10.0</hh:P50>
-          <hh:P90 uom="uom">10.0</hh:P90>
-          <hh:P95 uom="uom">10.0</hh:P95>
-          <!--<hh:CI95ofP95 uom="uom">10.0</hh:CI95ofP95>-->
-          <hh:maximum uom="uom">10.0</hh:maximum>
-          <hh:numberOfPartecipants>100</hh:numberOfPartecipants>
-          <hh:pinLOD>10</hh:pinLOD>
-          <hh:LOQ>10</hh:LOQ>
-        </hh:BiomarkerStatisticalParameterType>
-      </hh:biomarkerStatisticalParameter>
-      <hh:referencePeriod>
-        <hh:ReferencePeriodType>
-          <hh:startDate>2016-01-01</hh:startDate>
-          <hh:endDate>2016-12-31</hh:endDate>
-        </hh:ReferencePeriodType>
-      </hh:referencePeriod>
-      <hh:ageRange>
-        <hh:AgeRangeType>
-          <hh:startAge>
-            <hh:Age>
-              <hh:month>12</hh:month>
-            </hh:Age>
-          </hh:startAge>
-          <hh:range>
-            <hh:Age>
-              <hh:month>6</hh:month>
-            </hh:Age>
-          </hh:range>
-        </hh:AgeRangeType>
-      </hh:ageRange>
-      <hh:gender xlink:type="simple"/>
-      <hh:refersTo>
-        <hh:BiomarkerThematicMetadata>
-          <hh:studyType>
-            <gco:CharacterString/>
-            <gmd:PT_FreeText>
-              <gmd:textGroup xlink:type="simple">
-                <gmd:LocalisedCharacterString/>
-              </gmd:textGroup>
-            </gmd:PT_FreeText>
-          </hh:studyType>
-          <hh:areaType>
-            <gco:CharacterString/>
-            <gmd:PT_FreeText>
-              <gmd:textGroup xlink:type="simple">
-                <gmd:LocalisedCharacterString/>
-              </gmd:textGroup>
-            </gmd:PT_FreeText>
-          </hh:areaType>
-          <hh:specificSubPopulation>
-            <gco:CharacterString/>
-            <gmd:PT_FreeText>
-              <gmd:textGroup xlink:type="simple">
-                <gmd:LocalisedCharacterString/>
-              </gmd:textGroup>
-            </gmd:PT_FreeText>
-          </hh:specificSubPopulation>
-          <hh:meanAge>
-            <hh:Age>
-              <hh:month>5</hh:month>
-            </hh:Age>
-          </hh:meanAge>
-          <hh:describedBy xlink:href=""/>
-          <hh:describedBy xlink:href=""/>
-        </hh:BiomarkerThematicMetadata>
-      </hh:refersTo>
-    </hh:Biomarker>
-  </gml:featureMember>
-
-  <!--  Disease feature type-->
-  <gml:featureMember>
-    <hh:Disease>
-      <hh:aggregationUnit xlink:href="linkToSU"/>
-      <hh:ageRange>
-        <hh:AgeRangeType>
-          <hh:startAge>
-            <hh:Age>
-              <hh:week>30</hh:week>
-            </hh:Age>
-          </hh:startAge>
-          <hh:range>
-            <!--<hh:Age>
-              <hh:month>12</hh:month>
-            </hh:Age>-->
-          </hh:range>
-        </hh:AgeRangeType>
-      </hh:ageRange>
-      <hh:diseaseMeasure>
-        <hh:DiseaseMeasure>
-          <hh:diseaseMeasureType xlink:href="linkToExternalCodelist"/>
-          <hh:value>10</hh:value>
-        </hh:DiseaseMeasure>
-      </hh:diseaseMeasure>
-      <hh:gender xlink:type="simple"/>
-      <hh:referencePeriod>
-        <hh:ReferencePeriodType>
-          <hh:startDate>2016-01-01</hh:startDate>
-          <hh:endDate>2016-12-31</hh:endDate>
-        </hh:ReferencePeriodType>
-      </hh:referencePeriod>
-	  <hh:pathology xlink:href="https://icd.who.int/browse10/2016/en/fjdsfbjsdf"/>
-	  <!--<hh:pathology xlink:href="http://inspire.ec.europa.eu/codelist/ICDValue/I"/>-->
-      <hh:COD xlink:href="http://inspire.ec.europa.eu/codelist/CODValue/170.1.2cc"/>
-    </hh:Disease>
-  </gml:featureMember>
-  
-  <!--  Genera lHealth Statistics feature type-->
-  <gml:featureMember>
-    <hh:GeneralHealthStatistics>
-      <hh:aggregationUnit xlink:href="linkToSU"/>
-      <hh:ageRange>
-        <hh:AgeRangeType>
-          <hh:startAge>
-            <hh:Age>
-              <hh:year>2006</hh:year>
-            </hh:Age>
-          </hh:startAge>
-          <hh:range>
-            <hh:Age>
-              <hh:month>12</hh:month>
-            </hh:Age>
-          </hh:range>
-        </hh:AgeRangeType>
-      </hh:ageRange>
-      <hh:gender xlink:type="simple"/>
-      <hh:generalHealthName xlink:href="linkToExternalCodelist"/>
-      <hh:generalHealthValue>10.0</hh:generalHealthValue>
-      <hh:referencePeriod>
-        <hh:ReferencePeriodType>
-          <hh:startDate>2016-01-01</hh:startDate>
-          <hh:endDate>2016-12-31</hh:endDate>
-        </hh:ReferencePeriodType>
-      </hh:referencePeriod>
-    </hh:GeneralHealthStatistics>
-  </gml:featureMember>
-
-  <!--  Health Services Statistic feature type-->
-  <gml:featureMember>
-    <hh:HealthServicesStatistic>
-      <hh:aggregationUnit xlink:href="linkToSU"/>
-      <hh:healthServiceType xlink:href="linkToExternalCodelist"/>
-      <hh:healthServiceValue>10</hh:healthServiceValue>
-      <hh:referencePeriod>
-        <hh:ReferencePeriodType>
-          <hh:startDate>2016-01-01</hh:startDate>
-          <hh:endDate>2016-12-31</hh:endDate>
-        </hh:ReferencePeriodType>
-      </hh:referencePeriod>
-    </hh:HealthServicesStatistic>
-  </gml:featureMember>
-
-  <!--  Environmental Health Determinant Measure feature type-->
-  <gml:featureMember>
-    <hh:EnvHealthDeterminantMeasure gml:id="MT-AggInd_Lden_80">
-      <gml:description>Day evening night noise indicator for industries in the
-        agglomeration</gml:description>
-      <hh:location>
-        <gml:MultiSurface gml:id="_3c88c7e9-4e9d-4af4-9d4c-046035d6221c"
-          srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
-          <gml:surfaceMember>
-            <gml:Polygon gml:id="_6698bfe8-4da6-4b0b-b15c-4ae786b047b5"
-              srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
-              <gml:exterior>
-                <gml:LinearRing>
-                  <gml:posList>35.86771864710679 14.525613468299998 35.86774091970684
-                    14.525630361900003 35.867781457706876 14.5256450918 35.8678009364069
-                    14.525748129500002 35.86782258790693 14.525762798099999 35.86785728680697
-                    14.525781576099995 35.86786850820699 14.525806010299997 35.867877700506995
-                    14.525842874900002 35.8679629462071 14.5259682377 35.86799125300714
-                    14.5260817484 35.86802254780718 14.5260846559 35.86805935000722 14.5260808012
-                    35.86809442100727 14.526104564000002 35.86812217820731 14.526114653800002
-                    35.86813958800732 14.526126449000001 35.86815832930735 14.526136592500002
-                    35.86818085730737 14.526180300999998 35.868202177407404 14.526182283099999
-                    35.86821319220742 14.526157748500001 35.86820961690741 14.526106225299996
-                    35.86823858520745 14.526080729699997 35.86830561330753 14.5260677715
-                    35.86831937890755 14.5259916326 35.86836536100761 14.5259111369 35.8683619443076
-                    14.525861916699998 35.86838334680765 14.525824458600002 35.8683551729076
-                    14.525794932399998 35.86834617760758 14.5257588561 35.86833640840757
-                    14.525737582300003 35.86832149040755 14.525677775699995 35.86830066060752
-                    14.5256483575 35.86826486710747 14.5256211055 35.86826307920748
-                    14.525595327800001 35.868273309607495 14.525560574799998 35.86827201210749
-                    14.525541837 35.8682814347075 14.5255155483 35.86829577940752 14.525483594200002
-                    35.8682771281075 14.525481866699998 35.86825524870746 14.5254841505
-                    35.86820346660741 14.525439512199998 35.868160424007364 14.525423867900006
-                    35.868122488907304 14.525350255099998 35.86804627990721 14.525329464
-                    35.86800863890716 14.5253170541 35.867992475207146 14.525318740100003
-                    35.86797381930712 14.525317012599999 35.867900872107036 14.525333815
-                    35.86786960640699 14.525367232200006 35.867847512706966 14.525399047300002
-                    35.86778036090688 14.5254363461 35.867749538906835 14.525541025100003
-                    35.86775107030684 14.525563072299999 35.8677237495068 14.525592268800006
-                    35.86771864710679 14.525613468299998</gml:posList>
-                </gml:LinearRing>
-              </gml:exterior>
-              <gml:interior>
-                <gml:LinearRing>
-                  <gml:posList>35.86781825980692 14.5257236438 35.86782220200692 14.5257063879
-                    35.86785131680696 14.5256844283 35.867849001906954 14.525662407900002
-                    35.867862726906985 14.525570551500001 35.867879937507006 14.525534178599996
-                    35.867930606007064 14.525507591 35.867988186007125 14.525455388699994
-                    35.86803986040719 14.5254629663 35.86812517740732 14.5255239003
-                    35.86816134730735 14.525556028299999 35.86818249410739 14.525616858800001
-                    35.8681925443074 14.525626641900002 35.86822910380745 14.5256850766
-                    35.868246186607465 14.525763616899999 35.86822861850742 14.525881197399999
-                    35.86822073120744 14.525961856000004 35.86818393230738 14.525981156399999
-                    35.868167396807365 14.526006784 35.868144565407334 14.525972099499995
-                    35.86812159760731 14.525926142800001 35.868109244907295 14.525914112599997
-                    35.86808895410725 14.525917337299996 35.868067568207245 14.5259610702
-                    35.868057793607214 14.5259596353 35.86802350030717 14.525984676300002
-                    35.86799383300714 14.525963488899997 35.867973246207114 14.5259042668
-                    35.8679558647071 14.525868349200001 35.86791461470705 14.525847274099998
-                    35.867899299007014 14.5257826561 35.86786518940698 14.525725863
-                    35.86783376270695 14.525730864399998 35.86781825980692
-                    14.5257236438</gml:posList>
-                </gml:LinearRing>
-              </gml:interior>
-              <gml:interior>
-                <gml:LinearRing>
-                  <gml:posList>35.86817119260737 14.526053849600002 35.868179174707386
-                    14.526015940899999 35.86821091900742 14.526027888900002 35.868201492307406
-                    14.526068932099998 35.86817119260737 14.526053849600002</gml:posList>
-                </gml:LinearRing>
-              </gml:interior>
-              <gml:interior>
-                <gml:LinearRing>
-                  <gml:posList>35.86799988990715 14.526054869700001 35.868010441107174
-                    14.526028932299997 35.868029906807195 14.526039632999996 35.868016540007176
-                    14.5260649171 35.86799988990715 14.526054869700001</gml:posList>
-                </gml:LinearRing>
-              </gml:interior>
-            </gml:Polygon>
-          </gml:surfaceMember>
-        </gml:MultiSurface>
-      </hh:location>
-      <hh:type xlink:href="http://inspire.ec.europa.eu/codelist/EnvHealthDeterminantTypeValue/noise"
-        xlink:title="noise"/>
-      <hh:measureTime>
-        <gml:TimePeriod gml:id="_ccc023ec-c432-45f2-9436-f9d8772c9f54">
-          <gml:beginPosition>2016-01-01</gml:beginPosition>
-          <gml:endPosition>2016-12-31</gml:endPosition>
-        </gml:TimePeriod>
-      </hh:measureTime>
-      <hh:beginLifespanVersion>2020-07-16T09:47:56Z</hh:beginLifespanVersion>
-      <hh:validFrom>2016-12-31T22:00:00Z</hh:validFrom>
-      <hh:validTo>2021-12-30T22:00:00Z</hh:validTo>
-      <hh:measure uom="db">65.0</hh:measure>
-    </hh:EnvHealthDeterminantMeasure>
-  </gml:featureMember>
-
-  <!--  Environmental Health Determinant Statistical Data -->
-  <gml:featureMember>
-    <hh:EnvHealthDeterminantStatisticalData>
-      <hh:aggregationUnit xlink:href="linkToSU"/>
-      <hh:statisticalMethod xlink:href="linkToExternalCodelist"/>
-      <hh:type xlink:href=""/>
-      <hh:measure uom="uom">10.0</hh:measure>
-    </hh:EnvHealthDeterminantStatisticalData>
-  </gml:featureMember>
+<gml:FeatureCollection xmlns:net="http://inspire.ec.europa.eu/schemas/net/4.0"
+    xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo"
+    xmlns:su-core="http://inspire.ec.europa.eu/schemas/su-core/4.0"
+    xmlns:gco="http://www.isotc211.org/2005/gco"
+    xmlns:cp="http://inspire.ec.europa.eu/schemas/cp/4.0"
+    xmlns:hfp="http://www.w3.org/2001/XMLSchema-hasFacetAndProperty"
+    xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ad="http://inspire.ec.europa.eu/schemas/ad/4.0"
+    xmlns:au="http://inspire.ec.europa.eu/schemas/au/4.0"
+    xmlns:base2="http://inspire.ec.europa.eu/schemas/base2/2.0"
+    xmlns:ns1="http://www.w3.org/1999/xhtml" xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0"
+    xmlns:base="http://inspire.ec.europa.eu/schemas/base/3.3"
+    xmlns:gn="http://inspire.ec.europa.eu/schemas/gn/4.0"
+    xmlns:gmd="http://www.isotc211.org/2005/gmd"
+    xmlns:pd="http://inspire.ec.europa.eu/schemas/pd/4.0"
+    xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gts="http://www.isotc211.org/2005/gts"
+    xmlns:bu-base="http://inspire.ec.europa.eu/schemas/bu-base/4.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gss="http://www.isotc211.org/2005/gss"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    gml:id="_946826cc-c70d-4e27-80ef-fb4cde63d690"
+    xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/pd/4.0 https://inspire.ec.europa.eu/schemas/pd/4.0/PopulationDistributionDemography.xsd http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+    <gml:featureMember>
+        <pd:StatisticalDistribution gml:id="Total_and_Maltese_population">
+            <gml:identifier codeSpace="http://inspire.ec.europa.eu/ids">https://data.gov.mt/so/pd/StatisticalDistribution/DEMOREG_ESMS_A_MT/Total_and_Maltese_population</gml:identifier>
+            <pd:inspireId>
+                <base:Identifier>
+                    <base:localId>Total_and_Maltese_population</base:localId>
+                    <base:namespace>DEMOREG_ESMS_A_MT</base:namespace>
+                </base:Identifier>
+            </pd:inspireId>
+            <pd:areaOfDissemination>
+                <gml:Polygon gml:id="_af778e55-f6c7-4c7f-93e2-793a2e5b0673"
+                    srsName="http://www.opengis.net/def/crs/EPSG/0/4258" srsDimension="2">
+                    <gml:exterior>
+                        <gml:LinearRing>
+                            <gml:posList>35.80638998122697 14.530304465047989 35.807582300081584
+                                14.535120439763897 35.80761699627783 14.535234510171477
+                                35.81992309980091 14.56211211550036 35.84091172777708
+                                14.57255801143574 35.84098227775739 14.572573977491215
+                                35.86146075759717 14.576307204555023 35.86731465648389
+                                14.5753146850988 35.86777411970121 14.575084520029407
+                                35.872562726295314 14.5708637664792 35.87863435150487
+                                14.564267538062657 35.87891936928702 14.563914812669436
+                                35.88826013358824 14.550886173013545 36.0592451333761
+                                14.310006067519192 36.08015240329205 14.251779786957183
+                                36.08016826015595 14.25170636906818 36.08243379950564
+                                14.236312823437999 36.08228515032608 14.222642539692968
+                                36.0795981317392 14.207945635745567 36.07462607564134
+                                14.185610138425695 36.07425467875799 14.184758178376175
+                                36.07423397877612 14.184723134798576 36.0741928508186
+                                14.184679785426075 36.07409989810644 14.184623967138826
+                                36.07272723970468 14.184012035224418 36.072327588490154
+                                14.183949680253525 36.06962182316851 14.183597425134677
+                                36.03671252044614 14.186010851898462 36.036679021239706
+                                14.186015681803319 36.03638641004649 14.186199013898623
+                                35.87376326081398 14.341761143059415 35.87370389149868
+                                14.341833341447673 35.85403802929884 14.371528488177258
+                                35.838736440278886 14.396275336891803 35.82830758908987
+                                14.416517235755203 35.827738937161755 14.418465607116602
+                                35.82771234668047 14.418559195410522 35.82256285012455
+                                14.438407583284931 35.81969643067804 14.449631695706238
+                                35.81419399028203 14.475166068716259 35.80720045557264
+                                14.511924271812902 35.80714082222709 14.512245729511541
+                                35.80711684877817 14.512380318849063 35.8064554490185
+                                14.516821757729833 35.80638998122697
+                                14.530304465047989</gml:posList>
+                        </gml:LinearRing>
+                    </gml:exterior>
+                </gml:Polygon>
+            </pd:areaOfDissemination>
+            <pd:domain>
+                <gmd:PT_FreeText>
+                    <gmd:textGroup>
+                        <gmd:LocalisedCharacterString>Demography</gmd:LocalisedCharacterString>
+                    </gmd:textGroup>
+                </gmd:PT_FreeText>
+            </pd:domain>
+            <pd:measure xlink:href="http://inspire.ec.europa.eu/codelist/VariableValue/population"
+                xlink:title="Total Population and Maltese population"/>
+            <pd:measurementMethod
+                xlink:href="http://inspire.ec.europa.eu/codelist/StatisticsMeasurementMethodValue/relativeCount"/>
+            <pd:measurementUnit uom="population"/>
+            <pd:periodOfMeasurement>
+                <gml:TimePeriod
+                    gml:id="StatisticalDistribution_id_7743804c-b83f-4d22-b413-529e6185c406">
+                    <gml:begin>
+                        <gml:TimeInstant
+                            gml:id="StatisticalDistribution_id_47a443f4-6ac1-4036-8a5f-3bf8fb6a51e4">
+                            <gml:timePosition>2010-01-01</gml:timePosition>
+                        </gml:TimeInstant>
+                    </gml:begin>
+                    <gml:end>
+                        <gml:TimeInstant
+                            gml:id="StatisticalDistribution_id_cbce923b-b2f2-4f23-9ca4-30ac353bab27">
+                            <gml:timePosition>2016-12-31</gml:timePosition>
+                        </gml:TimeInstant>
+                    </gml:end>
+                </gml:TimePeriod>
+            </pd:periodOfMeasurement>
+            <pd:periodOfReference>
+                <gml:TimePeriod
+                    gml:id="StatisticalDistribution_id_3e047665-1793-4d44-9e96-bf0822edc2ec">
+                    <gml:begin>
+                        <gml:TimeInstant
+                            gml:id="StatisticalDistribution_id_94c3e032-c530-4210-bba7-b3b0d60f7d2d">
+                            <gml:timePosition>2010-01-01</gml:timePosition>
+                        </gml:TimeInstant>
+                    </gml:begin>
+                    <gml:end>
+                        <gml:TimeInstant
+                            gml:id="StatisticalDistribution_id_a532d49a-0270-43c9-8545-8cc4aa90405f">
+                            <gml:timePosition>2016-12-31</gml:timePosition>
+                        </gml:TimeInstant>
+                    </gml:end>
+                </gml:TimePeriod>
+            </pd:periodOfReference>
+            <pd:beginLifeSpanVersion>2018-11-26T00:00:00Z</pd:beginLifeSpanVersion>
+            <pd:generalStatus
+                xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <!--   Constraints of the data type StatisticalValue: Either the value or the specialValue attribute shall be provided.    -->
+                    <pd:value>2924.0</pd:value>
+                    <pd:specialValue xlink:href="http://inspire.ec.europa.eu/codelist/SpecialValue/confidential"/>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01432"
+                                xlink:title="LIJA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3114.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01432"
+                                xlink:title="LIJA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2354.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01331"
+                                xlink:title="KIRKOP"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>20290.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01539"
+                                xlink:title="MOSTA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>5873.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01133"
+                                xlink:title="LUQA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2192.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01351"
+                                xlink:title="SAFI"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3318.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01340"
+                                xlink:title="MQABBA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2938.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01157"
+                                xlink:title="SANTA LUCIJA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>13566.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01253"
+                                xlink:title="SAN GWANN"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>12514.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01260"
+                                xlink:title="SWIEQI"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>7230.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01258"
+                                xlink:title="SANTA VENERA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3180.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02664"
+                                xlink:title="XEWKIJA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>8453.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01162"
+                                xlink:title="TARXIEN"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>9806.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01221"
+                                xlink:title="GZIRA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3774.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01246"
+                                xlink:title="PEMBROKE"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1837.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01261"
+                                xlink:title="TA'  XBIEX"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>19696.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01259"
+                                xlink:title="SLIEMA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>235.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01402"
+                                xlink:title="MDINA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>11865.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01407"
+                                xlink:title="ZEBBUG (Malta)"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>16324.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01206"
+                                xlink:title="QORMI"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>6257.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02611"
+                                xlink:title="RABAT (Victoria)"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>11218.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01310"
+                                xlink:title="ZEJTUN"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>4526.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01413"
+                                xlink:title="BALZAN"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>10998.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01412"
+                                xlink:title="ATTARD"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>11833.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01117"
+                                xlink:title="FGURA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>23034.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01214"
+                                xlink:title="BIRKIRKARA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3128.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01320"
+                                xlink:title="GUDJA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>902.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02619"
+                                xlink:title="FONTANA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>4737.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01326"
+                                xlink:title="GHAXAQ"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2773.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01524"
+                                xlink:title="GHARGHUR"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3304.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01428"
+                                xlink:title="IKLIN"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>9238.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01227"
+                                xlink:title="HAMRUN"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2705.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01104"
+                                xlink:title="ISLA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>5164.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01105"
+                                xlink:title="BORMLA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3012.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01129"
+                                xlink:title="KALKARA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2484.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01103"
+                                xlink:title="BIRGU"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>15137.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01108"
+                                xlink:title="ZABBAR"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1683.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01165"
+                                xlink:title="XGHAJRA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2765.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02622"
+                                xlink:title="GHAJNSIELEM"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>12974.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01335"
+                                xlink:title="MARSASCALA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>4001.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02643"
+                                xlink:title="NADUR"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1885.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02648"
+                                xlink:title="QALA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2043.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02666"
+                                xlink:title="ZEBBUG (Ghawdex)"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>4029.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02663"
+                                xlink:title="XAGHRA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1257.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02623"
+                                xlink:title="GHARB"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>421.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02625"
+                                xlink:title="GHASRI"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1773.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02630"
+                                xlink:title="KERCEM"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>672.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02654"
+                                xlink:title="SAN LAWRENZ"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>4366.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01247"
+                                xlink:title="PIETA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>5718.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01101"
+                                xlink:title="VALLETTA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>14159.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01544"
+                                xlink:title="NAXXAR"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>10889.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01241"
+                                xlink:title="MSIDA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>10359.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01537"
+                                xlink:title="MELLIEHA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>23112.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01555"
+                                xlink:title="SAN PAWL IL-BAHAR"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3669.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01416"
+                                xlink:title="DINGLI"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3643.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01538"
+                                xlink:title="MGARR"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2744.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01349"
+                                xlink:title="QRENDI"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>8510.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01409"
+                                xlink:title="SIGGIEWI"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>12370.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01315"
+                                xlink:title="BIRZEBBUGIA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>10645.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01367"
+                                xlink:title="ZURRIEQ"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2038.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01118"
+                                xlink:title="FLORIANA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3507.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01336"
+                                xlink:title="MARSAXLOKK"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>8323.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01145"
+                                xlink:title="PAOLA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>5303.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01134"
+                                xlink:title="MARSA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1890.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02656"
+                                xlink:title="SANNAT"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1131.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02642"
+                                xlink:title="MUNXAR"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>11316.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01450"
+                                xlink:title="RABAT (Malta)"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2594.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01468"
+                                xlink:title="MTARFA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>11499.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01252"
+                                xlink:title="SAN GILJAN"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                        xlink:title="Total population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2321.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01331"
+                                xlink:title="KIRKOP"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>19287.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01539"
+                                xlink:title="MOSTA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>5547.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01133"
+                                xlink:title="LUQA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2088.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01351"
+                                xlink:title="SAFI"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3275.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01340"
+                                xlink:title="MQABBA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2909.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01157"
+                                xlink:title="SANTA LUCIJA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>11928.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01253"
+                                xlink:title="SAN GWANN"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>9545.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01260"
+                                xlink:title="SWIEQI"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>6785.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01258"
+                                xlink:title="SANTA VENERA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3090.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02664"
+                                xlink:title="XEWKIJA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>8302.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01162"
+                                xlink:title="TARXIEN"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>6366.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01221"
+                                xlink:title="GZIRA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3487.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01246"
+                                xlink:title="PEMBROKE"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1419.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01261"
+                                xlink:title="TA'  XBIEX"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>13008.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01259"
+                                xlink:title="SLIEMA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>213.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01402"
+                                xlink:title="MDINA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>11561.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01407"
+                                xlink:title="ZEBBUG (Malta)"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>15778.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01206"
+                                xlink:title="QORMI"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>6055.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02611"
+                                xlink:title="RABAT (Victoria)"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>11048.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01310"
+                                xlink:title="ZEJTUN"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3896.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01413"
+                                xlink:title="BALZAN"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>10624.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01412"
+                                xlink:title="ATTARD"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>11513.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01117"
+                                xlink:title="FGURA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>21392.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01214"
+                                xlink:title="BIRKIRKARA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3035.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01320"
+                                xlink:title="GUDJA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>865.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02619"
+                                xlink:title="FONTANA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>4663.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01326"
+                                xlink:title="GHAXAQ"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2609.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01524"
+                                xlink:title="GHARGHUR"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3168.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01428"
+                                xlink:title="IKLIN"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>8647.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01227"
+                                xlink:title="HAMRUN"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2635.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01104"
+                                xlink:title="ISLA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>5055.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01105"
+                                xlink:title="BORMLA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2910.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01129"
+                                xlink:title="KALKARA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2366.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01103"
+                                xlink:title="BIRGU"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>14742.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01108"
+                                xlink:title="ZABBAR"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1616.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01165"
+                                xlink:title="XGHAJRA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2604.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02622"
+                                xlink:title="GHAJNSIELEM"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>11047.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01335"
+                                xlink:title="MARSASCALA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3854.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02643"
+                                xlink:title="NADUR"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1725.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02648"
+                                xlink:title="QALA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1801.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02666"
+                                xlink:title="ZEBBUG (Ghawdex)"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3792.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02663"
+                                xlink:title="XAGHRA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1109.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02623"
+                                xlink:title="GHARB"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>380.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02625"
+                                xlink:title="GHASRI"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1698.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02630"
+                                xlink:title="KERCEM"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>588.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02654"
+                                xlink:title="SAN LAWRENZ"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3685.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01247"
+                                xlink:title="PIETA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>5452.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01101"
+                                xlink:title="VALLETTA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>13084.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01544"
+                                xlink:title="NAXXAR"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>7064.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01241"
+                                xlink:title="MSIDA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>8109.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01537"
+                                xlink:title="MELLIEHA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>14597.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01555"
+                                xlink:title="SAN PAWL IL-BAHAR"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3599.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01416"
+                                xlink:title="DINGLI"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3507.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01538"
+                                xlink:title="MGARR"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2674.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01349"
+                                xlink:title="QRENDI"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>8328.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01409"
+                                xlink:title="SIGGIEWI"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>8382.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01315"
+                                xlink:title="BIRZEBBUGIA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>10412.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01367"
+                                xlink:title="ZURRIEQ"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1861.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01118"
+                                xlink:title="FLORIANA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>3348.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01336"
+                                xlink:title="MARSAXLOKK"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>7793.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01145"
+                                xlink:title="PAOLA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>4555.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01134"
+                                xlink:title="MARSA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1787.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02656"
+                                xlink:title="SANNAT"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>995.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT02642"
+                                xlink:title="MUNXAR"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>10970.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01450"
+                                xlink:title="RABAT (Malta)"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>2555.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01468"
+                                xlink:title="MTARFA"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>7949.0</pd:value>
+                    <pd:status
+                        xlink:href="http://inspire.ec.europa.eu/codelist/StatisticalDataStatusValue/final"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial
+                                xlink:href="https://msdi2.data.gov.mt/deegree/services/su-vector_LAU2?service=WFS&amp;version=2.0.0&amp;request=GetFeature&amp;storedquery_id=urn:ogc:def:query:OGC-WFS::GetFeatureById&amp;ID=LAU2_2016_MT01252"
+                                xlink:title="SAN GILJAN"/>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type
+                                        xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                        xlink:title="Maltese population"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:classification>
+                <pd:Classification>
+                    <pd:type
+                        xlink:href="http://inspire.ec.europa.eu/codelist/ClassificationTypeValue/population"
+                        xlink:title="population"/>
+                    <pd:item>
+                        <pd:ClassificationItem>
+                            <pd:type
+                                xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/Maltese"
+                                xlink:title="Maltese population"/>
+                        </pd:ClassificationItem>
+                    </pd:item>
+                    <pd:item>
+                        <pd:ClassificationItem>
+                            <pd:type
+                                xlink:href="http://inspire.ec.europa.eu/codelist/PopulationValue/total"
+                                xlink:title="Total population"/>
+                        </pd:ClassificationItem>
+                    </pd:item>
+                </pd:Classification>
+            </pd:classification>
+        </pd:StatisticalDistribution>
+    </gml:featureMember>
+    <gml:featureMember>
+        <pd:StatisticalDistribution>
+            <pd:inspireId>
+                <base:Identifier>
+                    <base:localId>aaaa</base:localId>
+                    <base:namespace>bbbbb</base:namespace>
+                    <base:versionId/>
+                </base:Identifier>
+            </pd:inspireId>
+            <pd:areaOfDissemination>
+                <gml:Surface>
+                    <gml:metaDataProperty xlink:href="link"></gml:metaDataProperty>
+                    <gml:description xlink:href="link"></gml:description>
+                    <gml:descriptionReference xlink:href="link"/>
+                    <gml:identifier codeSpace=""></gml:identifier>
+                    <gml:name></gml:name>
+                    <gml:patches></gml:patches>
+                </gml:Surface>
+            </pd:areaOfDissemination>
+            <pd:universe>
+                <gco:CharacterString></gco:CharacterString>
+                <gmd:PT_FreeText>
+                    <gmd:textGroup xlink:href="link">
+                        <gmd:LocalisedCharacterString></gmd:LocalisedCharacterString>
+                    </gmd:textGroup>
+                </gmd:PT_FreeText>
+            </pd:universe>
+            <pd:domain>
+                <gco:CharacterString></gco:CharacterString>
+                <gmd:PT_FreeText>
+                    <gmd:textGroup xlink:href="link">
+                        <gmd:LocalisedCharacterString></gmd:LocalisedCharacterString>
+                    </gmd:textGroup>
+                </gmd:PT_FreeText>
+            </pd:domain>
+            <pd:measure xlink:href="link"/>
+            <pd:measurementMethod xlink:href="link"/>
+            <pd:measurementUnit uom="population"/>
+            <pd:notCountedProportion>1</pd:notCountedProportion>
+            <pd:periodOfMeasurement xlink:href="link">
+                <gml:TimePeriod>
+                    <gml:metaDataProperty xlink:href="link"></gml:metaDataProperty>
+                    <gml:description xlink:href="link"></gml:description>
+                    <gml:descriptionReference xlink:href="link"/>
+                    <gml:identifier codeSpace=""></gml:identifier>
+                    <gml:name></gml:name>
+                    <gml:relatedTime xlink:href="link"></gml:relatedTime>
+                    <gml:beginPosition></gml:beginPosition>
+                    <gml:endPosition></gml:endPosition>
+                </gml:TimePeriod>
+            </pd:periodOfMeasurement>
+            <pd:periodOfReference xlink:href="link">
+                <gml:TimePeriod>
+                    <gml:metaDataProperty xlink:href="link"></gml:metaDataProperty>
+                    <gml:description xlink:href="link"></gml:description>
+                    <gml:descriptionReference xlink:href="link"/>
+                    <gml:identifier codeSpace=""></gml:identifier>
+                    <gml:name></gml:name>
+                    <gml:relatedTime xlink:href="link"></gml:relatedTime>
+                    <gml:beginPosition></gml:beginPosition>
+                    <gml:endPosition></gml:endPosition>
+                </gml:TimePeriod>
+            </pd:periodOfReference>
+            <pd:periodOfValidity xlink:href="link">
+                <gml:TimePeriod>
+                    <gml:metaDataProperty xlink:href="link"></gml:metaDataProperty>
+                    <gml:description xlink:href="link"></gml:description>
+                    <gml:descriptionReference xlink:href="link"/>
+                    <gml:identifier codeSpace=""></gml:identifier>
+                    <gml:name></gml:name>
+                    <gml:relatedTime xlink:href="link"></gml:relatedTime>
+                    <gml:beginPosition></gml:beginPosition>
+                    <gml:endPosition></gml:endPosition>
+                </gml:TimePeriod>
+            </pd:periodOfValidity>
+            <pd:beginLifeSpanVersion>2018-11-26T00:00:00Z</pd:beginLifeSpanVersion>
+            <pd:endLifeSpanVersion>2028-11-26T00:00:00Z</pd:endLifeSpanVersion>
+            <pd:generalStatus xlink:href="link"/>
+            <pd:value>
+                <pd:StatisticalValue>
+                    <pd:value>1</pd:value>
+                    <pd:specialValue xlink:href="link"/>
+                    <pd:conventionallyLocatedProportion>1</pd:conventionallyLocatedProportion>
+                    <pd:approximatelyLocatedPopulationProportion>1</pd:approximatelyLocatedPopulationProportion>
+                    <pd:comment>
+                        <gco:CharacterString></gco:CharacterString>
+                        <gmd:PT_FreeText>
+                            <gmd:textGroup xlink:href="link">
+                                <gmd:LocalisedCharacterString></gmd:LocalisedCharacterString>
+                            </gmd:textGroup>
+                        </gmd:PT_FreeText>
+                    </pd:comment>
+                    <pd:flags>
+                        <gco:CharacterString></gco:CharacterString>
+                        <gmd:PT_FreeText>
+                            <gmd:textGroup xlink:href="link">
+                                <gmd:LocalisedCharacterString></gmd:LocalisedCharacterString>
+                            </gmd:textGroup>
+                        </gmd:PT_FreeText>
+                    </pd:flags>
+                    <pd:periodOfMeasurement xlink:href="link"/>
+                    <pd:status xlink:href="link"/>
+                    <pd:dimensions>
+                        <pd:Dimensions>
+                            <pd:spatial xlink:href="link"></pd:spatial>
+                            <pd:thematic>
+                                <pd:ClassificationItem>
+                                    <pd:type xlink:href="link"/>
+                                </pd:ClassificationItem>
+                            </pd:thematic>
+                        </pd:Dimensions>
+                    </pd:dimensions>
+                </pd:StatisticalValue>
+            </pd:value>
+            <pd:classification>
+                <pd:Classification>
+                    <pd:type xlink:href="link"/>
+                    <pd:item>
+                        <pd:ClassificationItem>
+                            <pd:type xlink:href="link"/>
+                        </pd:ClassificationItem>
+                    </pd:item>
+                </pd:Classification>
+            </pd:classification>
+        </pd:StatisticalDistribution>
+    </gml:featureMember>
 </gml:FeatureCollection>
