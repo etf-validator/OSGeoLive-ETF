@@ -9,6 +9,6 @@ This way you will be able to practice on how to use the validation of ETF.
 ### Resources availables
 
 At this moment there 3 available types of tests resources. These are:
-- GML data sets
-- WMS services
-- WFS services
+- [GML data sets](https://github.com/etf-validator/OSGeoLive-ETF/tree/main/resources/GML-data-sets)
+- [WMS services](https://github.com/etf-validator/OSGeoLive-ETF/tree/main/resources/WMS-services)
+- [WFS services](https://github.com/etf-validator/OSGeoLive-ETF/tree/main/resources/WFS-services)
